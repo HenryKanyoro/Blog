@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {%block content%}
+<div class="">
+    
+    <div >
+        <div style="padding-top: 100px;">
+            <h2 style="font-size: 50px; text-align: center; color: white;">
+                Welcome to Blog H </h2>
+                <br>
+            <h3 style="font-size: 35px; text-align:center; color: white;">Here we promise the best quotes</h3>    
+            <br><br>
+
+            <h4 style="font-size: 22px; text-align:center; color: white;">Quote of the Day</h4>
+            <p class="text-center" style="color: white;">{{blogQuote.quote}}</p>
+
+            <p class="text-center" style="color: white;"><b>~ {{blogQuote.author}} ~</b> </p>
+
+        </div>
+    </div>
+
+    
+</div>
+<style>
+    body{
+        background-color: black;
+    }
+       
+    .container {
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+</style>
+{%endblock%}
